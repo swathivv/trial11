@@ -1,0 +1,253 @@
+<html>
+    <head>
+        <title>Gift Card</title>
+        <style>
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                width: 80%;
+                height: 105%;
+                border-radius: 5px;
+                margin-left: 30px;
+            }
+            .card:hover {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+            .card1 {
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                width: 70%;
+                height: 75%;
+                border-radius: 5px;
+                margin-left: 5px;
+            }
+            .card1:hover {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+            h3, h4 {
+                display:inline-block;
+            }
+            h4 {
+                margin-left: 20px;
+                color: gray;
+            }
+            .button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                border-radius: 22px;
+            }
+            .add {
+                background-color: white;
+                color: black;
+                border: 2px solid #e7e7e7;
+            }
+
+            .add:hover {
+                background-color: #e7e7e7;
+            }
+
+            .balance {
+                background-color: white;
+                color: black;
+                border: 2px solid #555555;
+            }
+
+            .balance:hover {
+                background-color: #555555;
+                color: white;
+            }
+            .add, .balance {
+               margin-left: 20px;
+            }
+            .conditions {
+                margin-left:2px;
+            }
+            .topbar {
+                background-color: rgb(160, 241, 160);
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .column {
+                float: left;
+                width: 30%;
+                padding: 5px;
+            }
+        /* Clearfix (clear floats) */
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .new {
+                width: 50%;
+                margin-left:80px;
+            }
+            .now {
+                display: block;
+                margin-left:100px;
+            }
+            .now1 {
+                display: block;
+                margin-top:30px;
+                margin-left:60px;
+            }
+            .second {
+                border: solid 1pt black;
+                border-spacing: 40px 20px;
+            }
+            .fourthfr {
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                width: 80%;
+                height: 105%;
+                border-radius: 5px;
+                margin-left: 30px;
+            }
+            .fourthfr:hover {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+            .nextpage {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                width: 90%;
+                margin-top: 100px;
+                margin-left:250px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--begining of grid-->
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr">
+            <!--first 1fr begin-->
+            <div>
+                <!--first div inside first 1fr-->
+                <div class="topbar">
+                    <h3>Got a gift card</h3>
+                    <h4>Earn 2 * per $1</h4>
+                    <button class="button add" onclick="window.location.href='addreload.html'">Add or Reload</button>
+                    <button class="button balance" onclick="window.location.href='checkbalance.html'">Check Balance</button>
+                    <button class="button conditions" onclick="window.location.href='terms.html'">Card Terms & Conditions</button>
+                </div>
+
+                <!--second div inside first 1fr-->
+                <div>
+                    <b>Spring</b>
+                    <div class="row"> <!--first row class begin-->
+                        <div class="column">
+                          <img src="spring_card1.PNG" alt="drink1" style="width:100%">
+                        </div>
+        
+                        <div class="column">
+                            <img src="spring_card2.PNG" alt="drink1" style="width:100%">
+                        </div> 
+                        
+                        <div class="column">
+                            <img src="spring_card3.PNG" alt="drink1" style="width:100%">
+                        </div> 
+        
+                    </div> <!--first row class end-->
+
+
+                    <b>Encouragement</b>
+                    <div class="row"> <!--first row class begin-->
+                        <div class="column">
+                          <img src="encourage_card1.PNG" alt="drink1" style="width:100%">
+                        </div>
+        
+                        <div class="column">
+                            <img src="encourage_card2.PNG" alt="drink1" style="width:100%">
+                        </div> 
+                        
+                        <div class="column">
+                            <img src="encourage_card3.PNG" alt="drink1" style="width:100%">
+                        </div> 
+        
+                    </div> <!--first row class end-->
+
+
+                    <b>Anytime</b>
+                    <div class="row"> <!--first row class begin-->
+                        <div class="column">
+                          <img src="anytime_card1.PNG" alt="drink1" style="width:100%">
+                        </div>
+        
+                        <div class="column">
+                            <img src="anytime_card2.PNG" alt="drink1" style="width:100%">
+                        </div> 
+                        
+                        <div class="column">
+                            <img src="anytime_card3.PNG" alt="drink1" style="width:100%">
+                        </div> 
+        
+                    </div> <!--first row class end-->
+
+                   
+                </div> <!--second div inside first 1fr end--> 
+                
+            </div> <!--first 1fr end-->
+
+
+            <!--second 1fr-->
+            <div class="card" style="background-color:rgb(158, 236, 158);"> 
+                <h3><u>Add or reload</u></h3>
+                <img src="offercard.PNG" alt="drink1" style="width:70%;margin-top: 30px; margin-left:50px; height:30%;">
+                <h4 class="new">Get a free digital Starbucks Card when you join Starbucks® Rewards, or register a gift card you already have.</h4>
+                <button class="button balance now" onclick="window.location.href='joinnow.html'">Join Now</button>
+            <!--second 1fr end-->
+            </div>
+
+             <!--third 1fr-->
+             <div class="card1" style="background-color:rgb(158, 236, 158);" onclick="window.location.href='checkbalance.html'">
+                
+                <h3><u>Check Balance</u></h3>
+                <input type="text" placeholder="* Card Number" style="border: solid 1pt gray; margin-left:20px; border-radius:30px;"/><br/><br/>
+                <input type="text" placeholder="* Security code" style="border: solid 1pt gray; margin-left:20px; border-radius:30px;"/>  
+                <button class="button balance now1">Check balance</button>
+            
+            <!--third 1fr end-->
+            </div>
+
+             <!--fourth 1fr-->
+             <div class="card">
+                <h3><u>Card Terms and Conditions</u></h3>
+                <h4>This Starbucks Card Agreement ("Agreement") is between you and Starbucks Corporation ("we" or "us") and describes the terms and conditions that apply to your Starbucks Card. By buying, loading, or using your Starbucks Card, you agree to these terms.
+
+                <h4>This Agreement includes an Arbitration provision that governs any disputes between you and us. This provision will:</h4>
+                
+                <ul>
+                    <li><h4>Eliminate your right to a trial by jury;</h4></li>
+                    
+                </ul>
+                
+            
+            <!--fourth 1fr end-->
+            </div>
+
+             <!--fifth 1fr-->
+            <div>
+                
+            <button class="nextpage" onclick="window.location.href='pagethree.html'">NEXT-></button>
+            <!--fifth 1fr end-->
+            </div>
+
+        </div> <!--end of outer grid -->
+    </body>
+</html>

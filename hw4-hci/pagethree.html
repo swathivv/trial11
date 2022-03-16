@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <title>Starbucks Card</title>
+        <style>
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                width: 80%;
+                height: 105%;
+                border-radius: 5px;
+                margin-left: 30px;
+            }
+            .card:hover {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+            .card1 {
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                width: 70%;
+                height: 75%;
+                border-radius: 5px;
+                margin-left: 5px;
+            }
+            .card1:hover {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+            .button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                
+            }
+            .balance {
+                background-color: white;
+                color: black;
+                border: 2px solid #555555;
+                font-size:12px;
+            }
+
+            .balance:hover {
+                background-color: #555555;
+                color: white;
+            }
+            .now {
+                display: block;
+                margin-left:30px;
+                border-radius: 22px;
+            }
+            .now1 {
+                border-radius:0px;
+                border-style: dashed;
+                margin-left:30px;
+            }
+            .now2 {
+                border-radius:0px;
+                margin-top:20px;
+                margin-left:60px;
+            }
+            h5 {
+                margin-left:140px;
+            }
+            body {
+                background-color: white;
+            }
+            .nextpage {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                width: 200%;
+                margin-top: 100px;
+                margin-left:250px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!--begining of grid-->
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr 1fr;">
+            <!--first 1fr begin-->
+            <div class="card" style="background-color:rgb(158, 236, 158);">
+                <h2 style="margin-left: 8px;">Starbucks Card</h2>
+                <h3 class="myh3" style="margin-left: 8px;">$ 0.00</h3>
+                <button class="button balance now" onclick="window.location.href='manage.html'">Manage</button>
+                <img src="offercard.PNG" alt="drink1" style="width:77%;margin-top: 30px; margin-left:30px; height:30%;"><br/>
+                <br/><br/>
+                <button class="button balance now1" onclick="window.location.href='addcard.html'">+ Add Card</button>
+                
+                
+            </div> <!--first 1fr end-->
+
+
+            <!--second 1fr-->
+            <div class="card" style="background-color:rgb(158, 236, 158);"> 
+                <h3 style="margin-left: 8px;"><u>MANAGE</u></h3>
+                <h3 class="myh3" style="margin-left: 8px;">$ 0.00</h3>
+                <img src="offercard.PNG" alt="drink1" style="width:77%;margin-top: 30px; margin-left:30px; height:30%;">
+                <br/><br/>
+                Card Nick name: <input type="text" placeholder="My card (8509)" style="display: inline-block; margin-left: 8px;"/>
+                <h5 style="margin-left: 8px;">Auto Reload</h5>
+                <h5 style="margin-left: 8px;">Remove</h5>
+                <h5 style="margin-left: 8px;">Report stolen</h5>
+            <!--second 1fr end-->
+            </div>
+
+             <!--third 1fr-->
+             <div class="card1" style="background-color:rgb(158, 236, 158);">
+                
+                <h3><u>ADD A STARBUCKS CARD</u></h3>
+                <input type="text" placeholder="* Starbucks Card Number" style="border: solid 1pt gray; margin-left:20px; border-radius:30px;"/><br/><br/>
+                <input type="text" placeholder="* Security code" style="border: solid 1pt gray; margin-left:20px; border-radius:30px;"/>  <br/><br/>
+                <input type="checkbox" class="box"/>
+                <label for="cardmine"> Make this my primary card</label><br>
+                <button class="button balance now2" onclick="window.location.href='addcard.html'">Add Card</button>
+            
+            <!--third 1fr end-->
+            </div>
+
+             <!--fourth 1fr-->
+             <div class="card" style="background-color:rgb(158, 236, 158); margin-left:-70px;">
+                <h3><u>Add money to your Starbucks card</u></h3>
+                Starbucks card:<input type="text" placeholder="$ 0.00" style="border: solid 1pt gray; margin-left:20px; border-radius:30px;"/><br/><br/>
+                Load this amount:<input type="text" placeholder="$ 25.00" style="border: solid 1pt gray; margin-left:20px; border-radius:30px;"/>  <br/><br/>
+                Select Payment method: <input type="text" placeholder="Add Credit Card" style="border: solid 1pt gray; margin-left:20px; border-radius:30px;"/>  <br/><br/>
+                
+                <button class="button balance now2">Payment</button>
+            
+                
+            
+            <!--fourth 1fr end-->
+            </div>
+
+             <!--fifth 1fr-->
+            <div>
+
+
+            <!--fifth 1fr end-->
+            </div>
+
+
+            <button class="nextpage" onclick="window.location.href='pagethree.html'">NEXT-></button>
+            
+        </div> <!--end of outer grid -->
+    </body>
+</html>
